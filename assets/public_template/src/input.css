@@ -1,0 +1,212 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body{
+        @apply bg-[url('../img/bg-capil.jpg')] bg-cover bg-center bg-no-repeat
+    }
+}
+
+@layer components {
+    .header {
+        @apply h-[10vh] px-8;
+    }
+
+    .clock {
+        @apply flex flex-col gap-2 justify-center rounded px-6 h-full font-zcool bg-black text-green-500;
+    }
+
+    .instansi-wrapper {
+        @apply w-full h-full flex items-center justify-center gap-4 ;
+    }
+
+    .main-content {
+        @apply h-[90vh] flex flex-col items-center overflow-hidden;
+    }
+
+    .card-menu{
+        @apply w-full flex flex-col gap-4 items-center justify-center p-8 bg-white shadow-lg rounded-lg transition-all
+                hover:bg-primary hover:-translate-y-2 hover:text-white
+    }
+
+    .btn-close-modal{
+        @apply w-[3vh] h-[3vh] rounded-full flex justify-center items-center bg-white text-2xl font-bold text-neutral hover:bg-error hover:text-white border-0 absolute right-2 top-2 z-10
+    }
+
+    .card-loket-wrapper {
+        @apply w-full h-full p-10;
+    }
+
+    .card-loket {
+        @apply block shadow-cs shadow-base-300/20 relative overflow-hidden;
+    }
+
+    .tiket-button{
+        @apply btn btn-lg btn-error h-full text-3xl text-white font-semibold rounded-[.3rem_1rem_.3rem_1rem] btn-shadow gap-8 flex-nowrap 
+        disabled:bg-neutral  disabled:text-white
+        focus:bg-neutral
+    }
+
+    .tiket-button.loading{
+        @apply  w-fit
+    }
+}
+
+@layer utilities {
+    .bg-img{
+        @apply bg-[url('../img/bg3.jpg')] bg-cover bg-center bg-no-repeat
+    }
+
+    .btn-shadow{
+        box-shadow: .3rem -.3rem #e22020;
+    }
+
+    .card-menu.hover-icon-stroke:hover svg{
+        stroke: #3363ff !important;
+        transition: 0;
+    }
+
+    .text-title {
+        color: #59a9ff;
+    }
+
+    .text-responsive {
+        font-size: calc(0.6rem + 0.8vw);
+        line-height: calc(0.6rem + 0.8vw);
+    }
+
+    .text-responsive-md {
+        font-size: calc(0.5rem + 0.7vw);
+        line-height: calc(0.5rem + 0.7vw);
+    }
+
+    .text-responsive-sm {
+        font-size: calc(0.3rem + 0.7vw);
+        line-height: calc(0.3rem + 0.7vw);
+    }
+
+    .text-number-responsive {
+        font-size: calc(1.5rem + 3vw);
+        line-height: calc(1.5rem + 2vw);
+    }
+
+    .text-number-responsive-md {
+        font-size: calc(1.2rem + 3vw);
+        line-height: calc(1.2rem + 2vw);
+    }
+
+    .text-number-responsivsm {
+        font-size: calc(1rem + 3vw);
+        line-height: calc(1rem + 2vw);
+    }
+
+    .text-number-modal{
+        font-size: calc(2rem + 3vw);
+        line-height: calc(2rem + 2vw);
+        white-space: no-wrap;
+    }
+
+    .modal-box-shadow{
+        box-shadow: 0 0 5rem rgba(255,255,255,.5)
+    }
+
+    .inset-white{
+        box-shadow: inset 0 0 3rem #ffffff;
+    }
+
+    @keyframes draw {
+        50% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: -60;
+        }
+    }
+
+    .loket-button-shadow {
+        box-shadow: 0 0 1rem #7fbfcd, inset 0 0 1.3rem rgba(0, 0, 0, 0.3);
+    }
+
+    .tiket-button::before {
+        border-color: rgba(255, 255, 255, 0.3) !important;
+        border-left-color: #ffffff !important;
+    }
+
+    .tiket-button.loading::before {
+        margin-right: 0;
+        height: 3rem !important;
+        width: 3rem !important;
+        border-width: 0.5rem;
+        flex-shrink: 0 !important;
+    }
+    
+    .tiket-button-disabled, .tiket-button-disabled:hover, .tiket-button[disabled], .tiket-button[disabled]:hover{
+        opacity: 1 !important;
+        background-color: #ab1616 !important;
+        color: #ffffff !important;
+    }
+
+    .img-btn{
+        height: calc(.6rem + 1vw)
+    }
+
+    .img-res-1{
+        width: calc(3rem + 4vw)
+    }
+
+    .img-res-2{
+        width: calc(3rem + 2vw)
+    }
+
+    .loket-shadow {
+        box-shadow: 0 0 1rem rgba(10, 67, 255, 0.4);
+    }
+
+    .shadow-cs {
+        box-shadow: 0 .3rem 1.5rem rgba(0,0,0, 0.2);
+    }
+
+    .bg-shadow {
+        box-shadow: 0.1rem 0.1rem 0.6rem rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-shadow {
+        box-shadow: 0.5rem -2rem 2rem 0px rgba(0, 0, 0, 0.4) inset, 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 0.5rem -2rem 2rem 0px rgba(0, 0, 0, 0.4) inset, 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0.5rem -2rem 2rem 0px rgba(0, 0, 0, 0.4) inset, 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    }
+
+    .base{
+        @apply bg-error inline-block relative w-full h-40
+    }
+
+    .base:before {
+        content: "";
+      border-top: 35px solid red;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      width: 0;
+      height: 0;
+      position: absolute;
+      left: 0;
+      bottom: -35px;
+    }
+
+    body {
+        /* height: 100vh; */
+        width: 100vw;
+    }
+
+    @media print {
+        body {
+            width: 3in;
+            height: 3in !important;
+        }
+        @page {
+            width: 3in !important;
+            height: 3in !important;
+            margin: 1mm;
+        }
+    }
+}

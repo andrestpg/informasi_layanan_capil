@@ -1,0 +1,23 @@
+<%- include('./part/header.ejs') %>
+
+<main class="main-content justify-evenly px-8 print:hidden relative z-10">
+    <h1 class="text-5xl text-white drop-shadow-md uppercase text-center font-cinzel font-extrabold">
+        <span class="text-4xl">selamat datang</span>
+        <br />
+        rumah sakit umum daerah
+        <br />
+        abdurrahman sayoeti
+    </h1>
+    <div class="grid grid-rows-7 grid-cols-2 gap-8 w-full h-[60vh]">
+        <% klinik.forEach( data => { %>
+        <button class="btn btn-lg btn-error h-full text-3xl text-white font-semibold rounded-[.3rem_1.3rem_.3rem_1.3rem] btn-shadow service-btn" data-id="<%= data.id %> "><%= data.nama %></button>
+        <% }) %>
+    </div>
+    <p class="block w-full shadow-sm font-cinzel text-3xl font-semibold text-white mb-2">
+        Menyediakan Perawatan
+        <br />
+        Kesehatan Berkualitas
+    </p>
+</main>
+
+<%- include('./part/footer.ejs') %>

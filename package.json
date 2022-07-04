@@ -1,0 +1,34 @@
+{
+  "name": "antrian_capil",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "babel-node": "babel-node --presets=@babel/env",
+    "build": "babel src/ -d build/",
+    "tailwind": "npx tailwindcss -i ./assets/public_template/src/input.css -o ./assets/public_template/dist/style.css --watch --minify",
+    "build:css": "postcss ./assets/public_template/src/input.css -o ./assets/public_template/dist/style.min.css -m",
+    "watch": "babel-watch src/*",
+    "dev": "nodemon ./src/app.js --exec babel-node",
+    "start": "node ./dist/app.js"
+  },
+  "author": "astpg",
+  "license": "ISC",
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "cookie-parser": "^1.4.5",
+    "daisyui": "^2.13.4",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.5",
+    "@babel/node": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "babel-loader": "^8.2.5",
+    "babel-watch": "^7.7.0",
+    "tailwindcss": "^3.0.23"
+  }
+}

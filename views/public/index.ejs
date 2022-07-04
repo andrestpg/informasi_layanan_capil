@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+    <head>
+        <title>Aplikasi Informasi Layanan</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="/public_template/img/favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="/public_template/dist/style.css?122" />
+        <script>
+            const baseUrl = "<%= process.env.BASE_URL %>";
+        </script>
+    </head>
+    <body>
+        <div class="absolute top-0 left-0 w-full h-full bg-white/40 print:hidden"></div>
+        <main class="main-content h-[100vh] relative">
+            <div class="instansi-wrapper h-fit p-8">
+                <img src="/public_template/img/mini-logo.png" class="h-20" />
+                <img src="/public_template/img/capil.png" class="h-20" />
+            </div>
+            <h1 class="text-5xl font-bold text-neutral/80 pt-8">Aplikasi Informasi Pelayanan</h1>
+            <p class="text-3xl font-semibold text-neutral/80 pt-4 pb-16">Silahkan pilih menu yang telah kami sediakan</p>
+            <div class="w-full grid grid-cols-3 gap-8 px-12">
+                <a href="/syarat" class="card-menu gap-8">
+                    <div class="shadow-lg shadow-white/50 rounded-lg p-4 bg-yellow-500 text-white text-6xl">
+                        <i data-feather="list" class="stroke-[3] text-5xl w-12 h-12"></i>
+                    </div>
+                    <p class="text-xl text-center font-medium">Syarat-syarat Pelayanan</p>
+                </a>
+                <a href="/alur" class="card-menu gap-8">
+                    <div class="shadow-lg shadow-white/50 rounded-full p-4 bg-red-500 text-white text-6xl">
+                        <i data-feather="rotate-cw" class="stroke-[3] text-5xl w-12 h-12"></i>
+                    </div>
+                    <p class="text-xl text-center font-medium">Alur Pelayanan</p>
+                </a>
+                <a href="/denah" class="card-menu gap-8">
+                    <div class="shadow-lg shadow-white/50 rounded-lg p-4 bg-primary text-white text-6xl">
+                        <i data-feather="move" class="stroke-[3] text-5xl w-12 h-12 rotate-45"></i>
+                    </div>
+                    <p class="text-xl text-center font-medium">Denah Pelayanan</p>
+                </a>
+            </div>
+        </main>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js" integrity="sha512-24XP4a9KVoIinPFUbcnjIjAjtS59PUoxQj3GNVpWc86bCqPuy3YxAcxJrxFCxXe4GHtAumCbO2Ze2bddtuxaRw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            feather.replace()
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<%- include('../../part/header.ejs') %>
+
+<main class="main-content relative">
+    <h1 class="text-5xl font-bold text-neutral/80 pt-8">Syarat-syarat Layanan KIA</h1>
+    <p class="text-2xl font-semibold pt-4 pb-12">Berikut Merupakan Menu Persyaratan Kartu Identitas Anak</p>
+    <div class="w-[70%] grid grid-cols-3 gap-8">
+        <a href="/syarat/kia/baru" class="card-menu hover-icon-stroke">
+            <div class="rounded-lg text-6xl">
+                <i data-feather="file" class="fill-green-500 stroke-white text-7xl w-[4.5rem] h-[4.5rem]"></i>
+            </div>
+            <p class="text-xl text-center font-semibold">KIA Baru</p>
+        </a>
+        <a href="/syarat/kia/hilang" class="card-menu hover-icon-stroke">
+            <div class="rounded-lg text-6xl">
+                <i data-feather="file" class="fill-yellow-500 stroke-white text-7xl w-[4.5rem] h-[4.5rem]"></i>
+            </div>
+            <p class="text-xl text-center font-semibold">KIA Hilang / Rusak</p>
+        </a>
+        <a href="/syarat/kia/perubahan" class="card-menu hover-icon-stroke">
+            <div class="rounded-lg text-6xl">
+                <i data-feather="file" class="fill-yellow-500 stroke-white text-7xl w-[4.5rem] h-[4.5rem]"></i>
+            </div>
+            <p class="text-xl text-center font-semibold">KIA Perubahan Data</p>
+        </a>
+    </div>
+</main>
+
+<%- include('../../part/footer.ejs') %>

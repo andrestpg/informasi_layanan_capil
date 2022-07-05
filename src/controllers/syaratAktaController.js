@@ -1,8 +1,8 @@
-const previousLink = '/syarat';
+const previousLink = '/syarat/akta';
 
 export const index = async (req, res) => {
     res.render('public/syarat/akta/index', {
-        previousLink
+        previousLink: '/syarat'
     });
 }
 
@@ -49,7 +49,7 @@ export const aktaPengesahanAnak = async (req, res) => {
 }
 
 export const aktaPencatatanSipil = async (req, res) => {
-    res.render('public/syarat/akta/pecatatan_sipil', {
+    res.render('public/syarat/akta/pencatatan_sipil', {
         previousLink
     });
 }

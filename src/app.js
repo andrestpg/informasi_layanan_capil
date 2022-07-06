@@ -7,11 +7,8 @@ import syaratAktaRoute from './routes/syaratAktaRoute'
 import syaratKKRoute from './routes/syaratKKRoute'
 import syaratKtpRoute from './routes/syaratKtpRoute'
 import syaratKiaRoute from './routes/syaratKiaRoute'
-// import sopAktaRoute from './routes/sopAktaRoute'
-import sopKKRoute from './routes/sopKKRoute'
-// import sopKtpRoute from './routes/sopKtpRoute'
-// import sopKiaRoute from './routes/sopKiaRoute'
-
+import sopRoute from './routes/sopRoute'
+import sopAktaRoute from './routes/sopAktaRoute'
 import express from 'express'
 const app = express();
 app.listen(process.env.PORT)
@@ -65,10 +62,8 @@ app.get('/sop', (req, res) => {
         previousLink: '/'
     })
 });
-app.use('/sop/kk', sopKKRoute);
-// app.use('/sop/akta', sopAktaRoute);
-// app.use('/sop/ktp', sopKtpRoute);
-// app.use('/sop/kia', sopKiaRoute);
+app.use('/sop', sopRoute);
+app.use('/sop/akta', sopAktaRoute);
 
 // 404------------------
 app.use((req, res) => {

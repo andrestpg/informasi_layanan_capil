@@ -48,6 +48,10 @@
     .list-decimal li {
         @apply text-xl font-semibold text-neutral/80 mb-4;
     }
+
+    .powered{
+        @apply text-center text-sm font-medium italic text-primary-focus
+    }
 }
 
 @layer utilities {

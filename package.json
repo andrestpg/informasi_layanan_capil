@@ -10,7 +10,7 @@
     "build:css": "postcss ./assets/public_template/src/input.css -o ./assets/public_template/dist/style.min.css -m",
     "watch": "babel-watch src/*",
     "dev": "nodemon ./src/app.js --exec babel-node",
-    "start": "node ./dist/app.js"
+    "start": "node ./build/app.js"
   },
   "author": "astpg",
   "license": "ISC",

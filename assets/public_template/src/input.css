@@ -55,6 +55,18 @@
         @apply bg-[url('../img/bg3.jpg')] bg-cover bg-center bg-no-repeat;
     }
 
+    ::-webkit-scrollbar{
+        @apply w-2 h-2 rounded-[.3rem]
+    }
+
+    ::-webkit-scrollbar-track:vertical{
+        @apply bg-neutral/70 rounded-[.3rem];
+    }
+
+    ::-webkit-scrollbar-thumb:vertical {
+        @apply bg-indigo-300 w-2 h-2 border-0 rounded-[.3rem];
+    }
+
     .btn-shadow {
         box-shadow: 0.3rem -0.3rem #e22020;
     }

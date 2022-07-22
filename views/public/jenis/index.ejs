@@ -1,0 +1,46 @@
+<%- include('../part/header.ejs') %>
+
+<main class="main-content relative">
+    <h1 class="title">Jenis-jenis Layanan</h1>
+    <p class="desc pb-12">Berikut Merupakan Jenis-jenis Pelayanan Administrasi Kependudukan</p>
+    <div class="w-[70%] grid grid-cols-3 gap-8 text-neutral/80">
+        <a href="/jenis/kk" class="card-menu rounded-xl hover-icon-stroke">
+            <div class="rounded-lg text-6xl">
+                <i data-feather="file" class="fill-green-500 stroke-white text-7xl w-[4.5rem] h-[4.5rem]"></i>
+            </div>
+            <p class="text-xl text-center font-semibold">Pengurusan KK</p>
+        </a>
+        <a href="/jenis/akta" class="card-menu rounded-xl hover-icon-stroke">
+            <div class="rounded-lg text-6xl">
+                <i data-feather="file" class="fill-yellow-500 stroke-white text-7xl w-[4.5rem] h-[4.5rem]"></i>
+            </div>
+            <p class="text-xl text-center font-semibold">Pengurusan Akta</p>
+        </a>
+        <a href="/jenis/ktp" class="card-menu rounded-xl hover-icon-stroke">
+            <div class="rounded-lg text-6xl">
+                <i data-feather="file" class="fill-blue-500 stroke-white text-7xl w-[4.5rem] h-[4.5rem]"></i>
+            </div>
+            <p class="text-xl text-center font-semibold">Pengurusan KTP-el</p>
+        </a>
+        <a href="/jenis/skpwni" class="card-menu rounded-xl">
+            <div class="rounded-lg text-6xl">
+                <img src="/public_template/img/car.svg" class="w-[4.5rem]">
+            </div>
+            <p class="text-xl text-center font-semibold">SKPWNI</p>
+        </a>
+        <a href="/jenis/pindah_kewarganegaraan" class="card-menu rounded-xl">
+            <div class="rounded-lg text-6xl">
+                <img src="/public_template/img/airplane.svg" class="w-[4.5rem]">
+            </div>
+            <p class="text-xl text-center font-semibold">Pindah Kewarganegaraan</p>
+        </a>
+        <a href="/jenis/kia" class="card-menu rounded-xl hover-icon-stroke">
+            <div class="rounded-lg text-6xl">
+                <i data-feather="file" class="fill-pink-500 stroke-white text-7xl w-[4.5rem] h-[4.5rem]"></i>
+            </div>
+            <p class="text-xl text-center font-semibold">Pengurusan KIA</p>
+        </a>
+    </div>
+</main>
+
+<%- include('../part/footer.ejs') %>

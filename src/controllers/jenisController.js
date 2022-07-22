@@ -1,17 +1,17 @@
 export const index = async (req, res) => {
-    res.render('public/syarat/index', {
+    res.render('public/jenis/index', {
         previousLink: '/'
     });
 }
 
 export const skpwni = async (req, res) => {
-    res.render('public/syarat/skpwni', {
-        previousLink: '/syarat'
+    res.render('public/jenis/skpwni', {
+        previousLink: '/jenis'
     })
 }
 
 export const pindahWN = async (req, res) => {
-    res.render('public/syarat/pindah_wn', {
-        previousLink: '/syarat'
+    res.render('public/jenis/pindah_wn', {
+        previousLink: '/jenis'
     })
 }

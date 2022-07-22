@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import {index, pindahWN, skpwni} from '../controllers/syaratController'
+import {index, pindahWN, skpwni} from '../controllers/jenisController'
 
 const router = Router();
 

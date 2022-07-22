@@ -2,13 +2,22 @@ import 'dotenv/config'
 
 import bodyParser from 'body-parser'
 import cookieParser from 'cookie-parser'
+
 import syaratRoute from './routes/syaratRoute'
 import syaratAktaRoute from './routes/syaratAktaRoute'
 import syaratKKRoute from './routes/syaratKKRoute'
 import syaratKtpRoute from './routes/syaratKtpRoute'
 import syaratKiaRoute from './routes/syaratKiaRoute'
+
 import sopRoute from './routes/sopRoute'
 import sopAktaRoute from './routes/sopAktaRoute'
+
+import jenisRoute from './routes/jenisRoute'
+import jenisAktaRoute from './routes/jenisAktaRoute'
+import jenisKKRoute from './routes/jenisKKRoute'
+import jenisKtpRoute from './routes/jenisKtpRoute'
+import jenisKiaRoute from './routes/jenisKiaRoute'
+
 import express from 'express'
 const app = express();
 app.listen(process.env.PORT)
@@ -39,31 +48,22 @@ app.get('/denah', async (req, res) => {
     })
 });
 
-app.get('/syarat/skpwni', async (req, res) => {
-    res.render('public/syarat/skpwni', {
-        previousLink: '/syarat'
-    })
-});
-
-app.get('/syarat/pindah_kewarganegaraan', async (req, res) => {
-    res.render('public/syarat/pindah_wn', {
-        previousLink: '/syarat'
-    })
-});
-
 app.use('/syarat', syaratRoute);
 app.use('/syarat/akta', syaratAktaRoute);
 app.use('/syarat/kk', syaratKKRoute);
 app.use('/syarat/ktp', syaratKtpRoute);
 app.use('/syarat/kia', syaratKiaRoute);
 
-app.get('/sop', (req, res) => {
-    res.render('public/sop', {
-        previousLink: '/'
-    })
-});
 app.use('/sop', sopRoute);
 app.use('/sop/akta', sopAktaRoute);
+
+app.use('/jenis', jenisRoute);
+app.use('/jenis/akta', jenisAktaRoute);
+app.use('/jenis/kk', jenisKKRoute);
+app.use('/jenis/ktp', jenisKtpRoute);
+app.use('/jenis/kia', jenisKiaRoute);
+
+// app.use('/jenis/dafduk', dafdukRoute);
 
 // 404------------------
 app.use((req, res) => {

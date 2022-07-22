@@ -1,7 +1,7 @@
 const previousLink = '/sop'
 
 export const index = (req, res) => {
-    res.render('public/sop/kk/index', {
+    res.render('public/sop', {
         previousLink: '/sop'
     })
 }

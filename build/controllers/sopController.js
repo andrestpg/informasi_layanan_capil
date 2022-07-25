@@ -7,7 +7,7 @@ exports.skpwni = exports.pindah = exports.ktp = exports.kk = exports.kia = expor
 const previousLink = '/sop';
 
 const index = (req, res) => {
-  res.render('public/sop/kk/index', {
+  res.render('public/sop', {
     previousLink: '/sop'
   });
 };

@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.skpwni = exports.pindahWN = exports.index = void 0;
 
 const index = async (req, res) => {
-  res.render('public/syarat/index', {
+  res.render('public/jenis/index', {
     previousLink: '/'
   });
 };
@@ -14,16 +14,16 @@ const index = async (req, res) => {
 exports.index = index;
 
 const skpwni = async (req, res) => {
-  res.render('public/syarat/skpwni', {
-    previousLink: '/syarat'
+  res.render('public/jenis/skpwni', {
+    previousLink: '/jenis'
   });
 };
 
 exports.skpwni = skpwni;
 
 const pindahWN = async (req, res) => {
-  res.render('public/syarat/pindah_wn', {
-    previousLink: '/syarat'
+  res.render('public/jenis/pindah_wn', {
+    previousLink: '/jenis'
   });
 };
 

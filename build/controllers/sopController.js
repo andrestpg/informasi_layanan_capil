@@ -8,7 +8,7 @@ const previousLink = '/sop';
 
 const index = (req, res) => {
   res.render('public/sop', {
-    previousLink: '/sop'
+    previousLink: '/'
   });
 };
 
